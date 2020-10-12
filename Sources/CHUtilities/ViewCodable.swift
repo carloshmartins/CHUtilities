@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ViewCodable: AnyObject {
+public protocol ViewCodable: AnyObject {
     func buildView()
     func setupSubviews()
     func setupContraints()
