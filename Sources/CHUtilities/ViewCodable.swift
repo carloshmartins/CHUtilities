@@ -15,7 +15,7 @@ public protocol ViewCodable: AnyObject {
     func additionalSetup()
 }
 
-extension ViewCodable where Self: UIView {
+public extension ViewCodable where Self: UIView {
     func additionalSetup() {}
     func buildView() {
         setupSubviews()
@@ -23,7 +23,7 @@ extension ViewCodable where Self: UIView {
     }
 }
 
-extension ViewCodable where Self: UIViewController {
+public extension ViewCodable where Self: UIViewController {
     func additionalSetup() {}
     func buildView() {
         setupSubviews()
